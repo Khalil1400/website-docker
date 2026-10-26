@@ -7,8 +7,8 @@ A Django app for managing students, courses, and grade reports.
 Start Docker Desktop, then run:
 
 ```sh
-git clone https://github.com/Khalil1400/website-docker-assignment.git
-cd website-docker-assignment
+git clone https://github.com/Khalil1400/website-docker.git
+cd website-docker
 docker compose up --build -d
 ```
 
@@ -27,7 +27,7 @@ Your records are saved between runs. On Windows, `STOP-WEBSITE.cmd` stops the ap
 
 ## Use the ready-made image
 
-Download `website-assignment.tar.gz` from [Releases](https://github.com/Khalil1400/website-docker-assignment/releases/latest), then run:
+Download `website-assignment.tar.gz` from [Releases](https://github.com/Khalil1400/website-docker/releases/latest), then run:
 
 ```sh
 docker load -i website-assignment.tar.gz
@@ -35,4 +35,3 @@ docker run -d --name website -p 127.0.0.1:8001:8000 -v website-data:/app/data we
 ```
 
 Use either Docker Compose or the ready-made image so only one copy uses port 8001. The image is for Linux Intel/AMD computers running Docker.
-
