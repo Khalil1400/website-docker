@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>add</title>
+</head>
+<body>
+<h2> add student </h2>
+<p><a href="{% url 'index' %}">Home</a></p>
+
+{%  for student in S  %}
+    <p>  {{  student.Student_id  }} {{  student.Student_name  }}{{  student.gpa  }}  </p>
+    <form method="post" action="{% url 'delete_student' student.pk %}" onsubmit="return confirm('Delete this student and all their courses?');">
+        {% csrf_token %}
+        <button type="submit">Delete student {{ student.Student_id }}</button>
+    </form>
+{%  endfor  %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form  }}
+    <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
