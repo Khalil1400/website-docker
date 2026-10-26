@@ -10,6 +10,8 @@ Verified locally on 26 October 2026 using Docker Desktop with Linux containers.
 - A real HTTP workflow with CSRF protection created a synthetic student and two courses, and the report returned the expected weighted grade of 85.
 - The container passed its health check.
 - After `docker compose down` followed by `docker compose up -d`, the same student and grade report were still present in the named volume.
+- Cloned this repository from GitHub, built a fresh image from that clone, started it, and verified all four app pages returned HTTP 200.
+- Downloaded the published prebuilt image archive back from GitHub Releases, verified its SHA-256 checksum, loaded and ran it, and verified all four app pages returned HTTP 200.
 
 The demo records use ID 123 and the name Demo Student. They live only in the local Docker volume and are not baked into the image or source repository.
 
