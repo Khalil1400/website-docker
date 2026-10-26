@@ -1,4 +1,4 @@
-# Assignment validation
+# Validation
 
 Verified locally on 26 October 2026 using Docker Desktop with Linux containers.
 
@@ -22,3 +22,4 @@ sha256:9ce5ff94f51441e88de38ed1e6a22e7e3f3ad865a30a51d1044fa071f2ca747c
 ```
 
 The archive checksum is supplied separately in `SHA256SUMS.txt` alongside the image download.
+
