@@ -13,10 +13,10 @@ Verified locally on 26 October 2026 using Docker Desktop with Linux containers.
 
 The demo records use ID 123 and the name Demo Student. They live only in the local Docker volume and are not baked into the image or source repository.
 
-Prebuilt Linux amd64 image config ID:
+Prebuilt Linux amd64 local image ID:
 
 ```text
-sha256:2deff1c160be498703cbbef7ccf7f363e15d25fb8cd66519aae33335f2f0d96e
+sha256:9ce5ff94f51441e88de38ed1e6a22e7e3f3ad865a30a51d1044fa071f2ca747c
 ```
 
 The archive checksum is supplied separately in `SHA256SUMS.txt` alongside the image download.
